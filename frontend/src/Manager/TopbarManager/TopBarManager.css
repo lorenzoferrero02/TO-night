@@ -1,0 +1,25 @@
+.topbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgba(50, 198, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #4A7D7E;
+    margin-bottom: 10px;
+}
+
+.tonight{
+    background-image: url("src/assets/TO.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 130px;
+    width: 130px;
+    background-position: center;
+}
+
+

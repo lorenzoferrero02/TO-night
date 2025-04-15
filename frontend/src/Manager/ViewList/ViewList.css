@@ -1,0 +1,115 @@
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.subList{
+    background: #101f2e;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    display: grid;
+    text-align: center;
+    grid-template-rows: 100px 10px auto 70px;
+    grid-template-columns: 20px auto 20px 40px ;
+    row-gap: 20px;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 60px;
+    animation: myAnim 1s;
+}
+
+.glasspane{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.bClose{
+    background-color: transparent;
+    background-image: url("../../assets/closeButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+    background-position: center;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    border: none;
+}
+
+button:hover {
+    color: #03787c;
+}
+
+.titoloList {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+}
+
+.titoloList h1{
+    font-size: 40px;
+}
+
+.titoloList h3{
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+
+.member {
+    background-color: #00B7C2FF;
+    display: flex;
+    border-radius: 140px;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subList h2 {
+    font-size: 23px;
+    color: white;
+}
+
+.members{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    overflow-y: auto;
+}
+
+.bRemove{
+    background-color: transparent;
+    background-image: url("../../assets/remove.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    margin-right: 100px;
+    border: none;
+}
+
+

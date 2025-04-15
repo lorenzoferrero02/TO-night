@@ -1,0 +1,193 @@
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.subTable{
+    background: #101f2e;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    display: grid;
+    text-align: center;
+    grid-template-rows: 100px 10px auto 70px;
+    grid-template-columns: 20px auto 20px 40px ;
+    row-gap: 20px;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 60px;
+    animation: myAnim 1s;
+}
+
+.close{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: transparent;
+    font-size: 40px;
+    color:white;
+    transition: color 0.5s ease-in-out;
+}
+
+.close:hover{
+    color: #03787c;
+}
+
+.glasspane{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.subTable h1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+}
+
+.bClose{
+    background-color: transparent;
+    background-image: url("../../assets/closeButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 55px;
+    background-position: center;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    border: none;
+}
+.bClose:hover{
+    background-color: transparent;
+    background-image: url("../../assets/closeButton_blu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.modalform{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.labelN , .labelD, .labelT , .labelI, .labelDesc, .labelPT, .labelPL{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.labelN{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.labelD{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.labelT{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.labelI{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.labelDesc{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.labelPL{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.labelPT{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+.name, .data, .time, .pl, .pt{
+    height: 40px;
+    background-color: rgba(16, 14, 14, 0.37);
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.desc{
+    height: 300px;
+    background-color: rgba(16, 14, 14, 0.37);
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 40px;
+    text-align: left;
+    resize: none;
+    padding: 20px;
+}
+
+input[type="date"] {
+    padding-right: 20px;
+}
+
+input[type="time"] {
+    padding-right: 20px;
+}
+
+input[type="number"] {
+    padding-right: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="file"] {
+    padding-top: 30px;
+}
+

@@ -1,0 +1,8 @@
+.bRemove{
+    margin-right: 20px;
+}
+
+.bRemove:hover {
+    background-image: url("../../../assets/remove_blue.png");
+    transition: background-image 1.2s;
+}

@@ -1,0 +1,49 @@
+.topbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgba(50, 198, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #4A7D7E;
+    margin-bottom: 10px;
+}
+
+.tonight {
+    background-image: url("../../assets/TO.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 130px;
+    width: 130px;
+    background-position: center;
+    transition: all 0.3s ease; /* Aggiungi una transizione fluida per tutti i cambiamenti */
+}
+
+.tonight:hover {
+    background-image: url("../../assets/exit.png");
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.personalAreaBtn{
+    background-image: url("../../assets/user.png");
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    transition: all 0.3s ease; /* Aggiungi una transizione fluida per tutti i cambiamenti */
+}
+
+.personalAreaBtn:hover{
+    background-image: url("../../assets/user_cl.png");
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}

@@ -1,0 +1,16 @@
+.bRemoveC{
+    background-color: transparent;
+    background-image: url("../../assets/remove.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    border: none;
+    align-self: center;
+    transition: background-image 1.2s;
+}
+
+.bRemoveC:hover {
+    background-image: url("../../assets/remove_blue.png");
+    transition: background-image 1.2s;
+}

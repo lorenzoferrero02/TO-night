@@ -1,0 +1,162 @@
+
+.background{
+    height: 250px;
+    width: 250px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.64);
+    backdrop-filter: blur(2px);
+    display: grid;
+    grid-template-rows: 15px 1fr 3fr 1fr 1fr 1fr 1fr 15px;
+    grid-template-columns: 15px 1fr 15px ;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.background.show{
+    opacity: 1;
+}
+
+.popup2 {
+    background: white;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
+.elems{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.background h1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 23px;
+}
+
+#bTavolo{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 139px;
+    background: #00B7C2;
+    height: 85%;
+}
+
+#bLista{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 139px;
+    background: #00B7C2;
+    height: 85%;
+    text-align: center;
+}
+#bEdit{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 139px;
+    background: #00B7C2;
+    height: 85%;
+}
+#bRemove{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 139px;
+    background: #a20000;
+    bottom: 10px;
+    height: 85%;
+}
+
+#bLista:hover{
+    background: white;
+    color: #00B7C2;
+    border: 0;
+}
+
+#bTavolo:hover{
+    background: white;
+    color: #00B7C2;
+    border: 0;
+}
+
+#bRemove:hover{
+    background: #000000;
+    color: #ff0000;
+    border: 0;
+}
+#bEdit:hover{
+    background: white;
+    color: #00B7C2;
+    border: 0;
+}
+
+#bRemove,#bEdit, #bLista, #bTavolo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-top: 10px;
+    color: black;
+}
+
+.container{
+    height: 250px;
+    width: 2500px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.containerEv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 40px;
+    margin-top: 20px;
+    background-color: rgba(51, 51, 51, 0.7);
+    transition: ease-in-out 1s;
+}
+
+.containerEv:hover{
+    background-color: rgb(53, 86, 110);
+}
+
+.addEv{
+    background-color: transparent;
+    background-image: url("../../assets/plus.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    border: none;
+    transition: ease-in-out 0.5s;
+}
+

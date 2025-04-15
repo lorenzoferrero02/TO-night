@@ -1,0 +1,39 @@
+.subListC{
+    background: #101f2e;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 15%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 60px;
+    animation: myAnim 1s;
+}
+
+.ok{
+    width: 100px;
+    height: 40px;
+    background: #00B7C2;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+
+}
+
+.ok:hover{
+    background: white;
+    color: #00B7C2;
+}
+
+.subListC h1{
+    color: white;
+    font-size: 30px;
+}
